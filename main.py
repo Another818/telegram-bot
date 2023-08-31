@@ -39,7 +39,7 @@ from comandos.translate_command import translate_command
 
 def main() -> None:
     """Start the bot."""
-    bot_token = os.getenv('bot_token')
+    bot_token = "6396387746:AAHXHsa-vAVcnZs6YbsdFECMMY537CULOvY"
     # Create the Application and pass it your bot's token.
     application = Application.builder().token(bot_token).build()
 
