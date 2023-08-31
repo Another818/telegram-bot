@@ -1,0 +1,16 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "main.py",
+        "use": "@now/python"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "main.py" }
+    ],
+    "env": {
+      "BOT_TOKEN": "6396387746:AAHXHsa-vAVcnZs6YbsdFECMMY537CULOvY"
+    }
+  }
+  
