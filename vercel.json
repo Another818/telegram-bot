@@ -2,12 +2,15 @@
     "version": 2,
     "builds": [
       {
-        "src": "main.py",
+        "src": "vercel_app/wsgi.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "main.py" }
+      { 
+        "src": "/(.*)",
+        "dest": "vercel_app/wsgi.py"
+      }
     ],
     "env": {
       "BOT_TOKEN": "6396387746:AAHXHsa-vAVcnZs6YbsdFECMMY537CULOvY"
