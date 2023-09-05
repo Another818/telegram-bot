@@ -2,14 +2,14 @@
     "version": 2,
     "builds": [
       {
-        "src": "vercel_app/wsgi.py",
+        "src": "TelegramBot/TelegramBot/wsgi.py",
         "use": "@vercel/python"
       }
     ],
     "routes": [
       { 
         "src": "/(.*)",
-        "dest": "vercel_app/wsgi.py"
+        "dest": "TelegramBot/TelegramBot/wsgi.py"
       }
     ],
     "env": {
